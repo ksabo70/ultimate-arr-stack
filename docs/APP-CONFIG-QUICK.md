@@ -94,14 +94,15 @@ Config (⚙️) → Folders → set **absolute paths**:
 
 1. Open `http://NAS_IP:5055`
 2. Sign in with Jellyfin: URL `http://jellyfin:8096`, enter your Jellyfin credentials
-3. Settings → Services → Add Radarr:
+3. Settings → Jellyfin → set **External URL** to `http://jellyfin.lan` (or `http://NAS_IP:8096`) — makes "Play on Jellyfin" links work in your browser
+4. Settings → Services → Add Radarr:
    - Hostname: `gluetun`, Port: `7878`, Quality Profile: `UHD Bluray + WEB`
    - External URL: `http://radarr.lan` (or `http://NAS_IP:7878`)
-4. Settings → Services → Add Sonarr:
+5. Settings → Services → Add Sonarr:
    - Hostname: `gluetun`, Port: `8989`, Quality Profile: `Ultra-HD`
    - External URL: `http://sonarr.lan` (or `http://NAS_IP:8989`)
-5. Settings → Jellyfin → toggle **Movies** and **TV** on → Save
-6. Click **Sync Libraries** then **Start Scan**
+6. Settings → Jellyfin → toggle **Movies** and **TV** on → Save
+7. Click **Sync Libraries** then **Start Scan**
 
 ### 5. Bazarr — Add subtitle providers
 

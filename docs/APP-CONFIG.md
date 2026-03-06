@@ -257,7 +257,8 @@ Lets users browse and request movies/TV shows.
 2. **Sign in with Jellyfin:**
    - Jellyfin URL: `http://jellyfin:8096`
    - Enter Jellyfin credentials
-3. **Configure Services:**
+3. **Set Jellyfin External URL:** Settings → Jellyfin → **External URL:** `http://jellyfin.lan` (or `http://NAS_IP:8096`) — makes "Play on Jellyfin" links work in your browser
+4. **Configure Services:**
    - Settings → Services → Add Radarr:
      - **Hostname:** `gluetun` (internal Docker hostname)
      - **Port:** `7878`
@@ -268,8 +269,8 @@ Lets users browse and request movies/TV shows.
      - **Port:** `8989`
      - **Quality Profile:** `Ultra-HD`
      - **External URL:** `http://sonarr.lan` (or `http://NAS_IP:8989`)
-4. **Enable Jellyfin Libraries:** Settings → Jellyfin → toggle **Movies** and **TV** on → Save
-5. **Sync Libraries:** On the same page, click **Sync Libraries** then **Start Scan**
+5. **Enable Jellyfin Libraries:** Settings → Jellyfin → toggle **Movies** and **TV** on → Save
+6. **Sync Libraries:** On the same page, click **Sync Libraries** then **Start Scan**
 
 > **Why libraries matter:** Without this, Seerr doesn't know what's already in your Jellyfin library. Movies and shows will stay stuck at "Requested" even after they're downloaded and playable.
 
